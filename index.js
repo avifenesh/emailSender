@@ -14,6 +14,7 @@ const _data = require("./lib/data");
 const handlers = require("./lib/handlers");
 const helpers = require("./lib/helpers");
 const mongoose = require("mongoose");
+const dbURI = require("./.data/secret");
 
 // Instantiate the http server
 const httpServer = http.createServer(function (req, res) {
@@ -30,7 +31,6 @@ const httpsServer = https.createServer(httpsServerOptions, function (req, res) {
 });
 
 // Connect to mongoDB
-const dbURI = "";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
