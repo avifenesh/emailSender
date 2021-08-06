@@ -30,8 +30,7 @@ const httpsServer = https.createServer(httpsServerOptions, function (req, res) {
 });
 
 // Connect to mongoDB
-const dbURI =
-  "mongodb+srv://aviTheFirst:avi23avi23@emailsender.t0gkr.mongodb.net/EmailSender?retryWrites=true&w=majority";
+const dbURI = "";
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
