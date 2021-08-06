@@ -113,4 +113,5 @@ const router = {
   users: handlers.users,
   tokens: handlers.tokens,
   mails: handlers.mails,
+  listOfMails: handlers.listOfMails,
 };
