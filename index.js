@@ -13,15 +13,11 @@ const fs = require("fs");
 const _data = require("./lib/data");
 const handlers = require("./lib/handlers");
 const helpers = require("./lib/helpers");
+const mongoose = require("mongoose");
 
 // Instantiate the http server
 const httpServer = http.createServer(function (req, res) {
   unifiedServer(req, res);
-});
-
-// Srart the http server
-httpServer.listen(config.httpPort, function () {
-  console.log(`The server is listening on port ${config.httpPort} `);
 });
 
 // Instantiate the https server
@@ -33,10 +29,22 @@ const httpsServer = https.createServer(httpsServerOptions, function (req, res) {
   unifiedServer(req, res);
 });
 
-// Srart the https server
-httpsServer.listen(config.httpsPort, function () {
-  console.log(`The server is listening on port ${config.httpsPort} `);
-});
+// Connect to mongoDB
+const dbURI =
+  "mongodb+srv://aviTheFirst:avi23avi23@emailsender.t0gkr.mongodb.net/EmailSender?retryWrites=true&w=majority";
+mongoose
+  .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then((result) => {
+    console.log("Connect to db"),
+      // Srart the http server
+      httpServer.listen(config.httpPort, function () {
+        console.log(`The server is listening on port ${config.httpPort} `);
+      }), // Srart the https server
+      httpsServer.listen(config.httpsPort, function () {
+        console.log(`The server is listening on port ${config.httpsPort} `);
+      });
+  })
+  .catch((err) => console.log(err));
 
 // All the server logic for both http and https server
 const unifiedServer = function (req, res) {
