@@ -7,6 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "build": "lwc-services build -m production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/avifenesh/emailSender/issues"
   },
-  "homepage": "https://github.com/avifenesh/emailSender#readme"
+  "homepage": "https://github.com/avifenesh/emailSender#readme",
+  "dependencies": {
+    "create-lwc-app": "^3.1.2"
+  }
 }
