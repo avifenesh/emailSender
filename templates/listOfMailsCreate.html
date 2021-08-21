@@ -1,0 +1,28 @@
+<h1>Create A list of mail</h1>
+<h2>
+  Your mails will saved in your account and you can use them later for send
+  mails to them
+</h2>
+<a class="backButton" href="/mails/all">Back</a>
+<hr />
+
+<div class="formWrapper">
+  <form id="listOfMailsCreate" action="api/listOfMails" method="POST">
+    <div class="formError"></div>
+    <div class="inputWrapper">
+      <div class="inputLabel">List Of Email</div>
+      <input
+        type="text"
+        name="mailList"
+        placeholder="something@service.com, something2@service.com, ... "
+      />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">List Name</div>
+      <input type="text" name="listName" placeholder="myFamily" />
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Create list of mail</button>
+    </div>
+  </form>
+</div>

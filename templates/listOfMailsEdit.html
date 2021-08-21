@@ -1,0 +1,61 @@
+<h1>List Of Mails Details</h1>
+<a class="backButton" href="/mails/all">Back</a>
+<hr />
+
+<h2>Edit the mail details</h2>
+
+<div class="formWrapper">
+  <form id="listOfMailsEdit1" action="/api/listOfMails" method="PUT">
+    <input type="hidden" name="_method" value="PUT" />
+    <div class="formError"></div>
+    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+
+    <div class="inputWrapper">
+      <div class="inputLabel">List of Mail ID</div>
+      <input
+        class="disabled ListIdInput"
+        type="text"
+        name="displayId"
+        disabled
+      />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">List Name</div>
+      <input
+        class="disabled displayListNameInput"
+        type="text"
+        name="displayListName"
+      />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">Mails</div>
+      <input
+        class="disabled displayMailsListInput"
+        type="text"
+        name="displayListMail"
+      />
+    </div>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Changes</button>
+    </div>
+  </form>
+</div>
+
+<hr />
+<h2>Delete The list</h2>
+<div class="formWrapper">
+  <form id="listOfMailsEdit2" action="/api/listOfMails" method="DELETE">
+    <input type="hidden" name="_method" value="DELETE" />
+    <div class="formError"></div>
+    <div class="warning">
+      Warning: This action cannot be undone. Dont click this button on accident!
+    </div>
+    <input class="hiddenIdInput" type="hidden" name="uid" />
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta red">Delete list of mail</button>
+    </div>
+  </form>
+</div>

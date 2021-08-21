@@ -1,0 +1,32 @@
+<h1>Dashboard</h1>
+<h2>You may create up to 5 mails, and 5 list of mails</h2>
+<hr />
+
+<table id="mailsListTable">
+  <tr>
+    <th>Mail</th>
+    <th>Details</th>
+    <th>Send</th>
+  </tr>
+  <table id="listOfMailsListTable">
+    <tr>
+      <th>List Name</th>
+      <th>List of mails</th>
+      <th>Details</th>
+      <th>Send</th>
+    </tr>
+    <tr id="noMailsMessage">
+      <td colspan="5">You have no mails, please create one!</td>
+    </tr>
+    <tr id="noListOfMailsMessage">
+      <td colspan="5">You have no list of mails, please create one!</td>
+    </tr>
+  </table>
+
+  <div id="createmailsCTA" class="ctaWrapper">
+    <a class="cta green" href="mails/create">Create a Mail</a>
+  </div>
+  <div id="createlistmailsCTA" class="ctaWrapper">
+    <a class="cta green" href="listOfMails/create">Create a List</a>
+  </div>
+</table>

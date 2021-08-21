@@ -1,0 +1,76 @@
+<h1>Send Mails</h1>
+<a class="backButton" href="/mails/all">Back</a>
+<h2>
+  Please add your text and your mail password. The system will do the rest
+</h2>
+<h3>
+  If you using gmail you may need to configure your Gmail account to allow less
+  secure apps
+  <a href="https://www.google.com/settings/security/lesssecureapps">here</a>
+</h3>
+
+<div class="formWrapper">
+  <form id="sendMail1" action="/api/send" method="GET">
+    <input type="hidden" name="_method" value="PUT" />
+    <div class="formError"></div>
+    <div class="formSuccess">Your Mail Has Been Send</div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">User Mail</div>
+      <input
+        class="disabled displayMyMailInput"
+        type="text"
+        name="displayMyMail"
+        disabled
+      />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Service</div>
+      <input
+        class="disabled displayServiceInput"
+        type="text"
+        name="displayservice"
+        disabled
+      />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Mails</div>
+      <input
+        class="disabled displayMailInput"
+        type="text"
+        name="displaymail"
+        disabled
+      />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Subject</div>
+      <input
+        class="disabled displaySubjectInput"
+        type="text"
+        name="subject"
+        placeholder="Hello ✔"
+      />
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Text Here:</div>
+      <textarea name="message" rows="10" cols="80">Dear Avi,</textarea>
+    </div>
+
+    <div class="inputWrapper">
+      <div class="inputLabel">Mail Password</div>
+      <input
+        class="disabled displayMailInput"
+        type="password"
+        name="mailPassword"
+      />
+    </div>
+
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Send</button>
+    </div>
+  </form>
+</div>
