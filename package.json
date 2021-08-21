@@ -7,7 +7,6 @@
     "lib": "lib"
   },
   "scripts": {
-    "build": "lwc-services build -m production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
