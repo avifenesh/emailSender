@@ -19,6 +19,10 @@
   "bugs": {
     "url": "https://github.com/avifenesh/emailSender/issues"
   },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.14.5"
+  },
   "homepage": "https://github.com/avifenesh/emailSender#readme",
   "dependencies": {
     "ajax": "0.0.4",
