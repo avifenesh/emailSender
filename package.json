@@ -4,7 +4,9 @@
   "description": "email sender app",
   "main": "index.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "public": "public",
+    "templates": "templates"
   },
   "scripts": {
     "start": "node index.js",
