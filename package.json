@@ -23,6 +23,7 @@
   "dependencies": {
     "create-lwc-app": "^3.1.2",
     "crypto": "^1.0.1",
+    "dirname": "^0.1.0",
     "fs": "0.0.1-security",
     "mongoose": ">=4.1.11",
     "nodemailer": "^6.6.3",
