@@ -20,16 +20,17 @@
     "url": "https://github.com/avifenesh/emailSender/issues"
   },
   "engines": {
-    "node": "10.15.3",
-    "npm": "6.14.5"
+    "node": "12.17.x"
   },
   "homepage": "https://github.com/avifenesh/emailSender#readme",
   "dependencies": {
     "ajax": "0.0.4",
     "assets": "^3.0.1",
+    "bufferutil": "^4.0.3",
     "create-lwc-app": "^3.1.2",
     "crypto": "^1.0.1",
     "dirname": "^0.1.0",
+    "express": "^4.17.1",
     "file": "^0.2.2",
     "fs": "0.0.1-security",
     "join": "^3.0.0",
@@ -38,8 +39,11 @@
     "path": "^0.12.7",
     "read": "^1.0.7",
     "serve": "^12.0.0",
+    "socket.io": "^4.1.3",
     "static": "^2.0.0",
     "string_decoder": "^1.3.0",
+    "utf-8-validate": "^5.0.5",
+    "ws": "^8.2.0",
     "xhr": "^2.6.0"
   }
 }
