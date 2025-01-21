@@ -21,9 +21,6 @@
   "bugs": {
     "url": "https://github.com/avifenesh/emailSender/issues"
   },
-  "engines": {
-    "node": "12.17.x"
-  },
   "homepage": "https://github.com/avifenesh/emailSender#readme",
   "dependencies": {
     "ajax": "0.0.4",
