@@ -48,6 +48,7 @@
     "utf-8-validate": "^5.0.5",
     "ws": "^8.18.0",
     "xhr": "^2.6.0",
-    "xmlhttprequest": "^1.8.0"
+    "xmlhttprequest": "^1.8.0",
+    "bcrypt": "^5.1.1"
   }
 }
