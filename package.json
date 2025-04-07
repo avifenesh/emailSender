@@ -30,7 +30,7 @@
     "create-lwc-app": "^3.1.2",
     "crypto": "^1.0.1",
     "dirname": "^0.1.0",
-    "express": "^4.21.1",
+    "express": "^5.1.0",
     "file": "^0.2.2",
     "fs": "0.0.1-security",
     "http": "0.0.1-security",
